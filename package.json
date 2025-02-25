@@ -11,6 +11,8 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@strapi/design-system": "^1.19.0",
+    "@strapi/helper-plugin": "^4.25.20",
     "@strapi/plugin-cloud": "5.10.3",
     "@strapi/plugin-users-permissions": "5.10.3",
     "@strapi/strapi": "5.10.3",
@@ -19,7 +21,9 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
-    "styled-components": "^6.0.0"
+    "strapi": "^3.6.11",
+    "styled-components": "^6.0.0",
+    "vite": "^6.2.0"
   },
   "devDependencies": {
     "@types/node": "^20",

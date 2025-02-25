@@ -2,7 +2,7 @@
   "version": "v1",
   "packages": {
     "my-strapi-plugin": {
-      "signature": "0887a5667bf20d46ffb251200acc4c8c",
+      "signature": "984decf1c3d903f370c623d68b440c2d",
       "file": true
     }
   }

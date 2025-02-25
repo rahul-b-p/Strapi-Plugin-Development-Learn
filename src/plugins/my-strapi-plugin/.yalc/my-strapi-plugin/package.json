@@ -33,11 +33,12 @@
   "dependencies": {
     "@strapi/design-system": "^2.0.0-rc.16",
     "@strapi/icons": "^2.0.0-rc.16",
+    "my-strapi-plugin": "file:.yalc/my-strapi-plugin",
     "react-intl": "^7.1.6"
   },
   "peerDependencies": {
-    "@strapi/strapi": "^5.10.3",
     "@strapi/sdk-plugin": "^5.3.2",
+    "@strapi/strapi": "^5.10.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.29.0",
@@ -53,5 +54,5 @@
   "description": "Starting into plugin development",
   "license": "MIT",
   "author": "rahul-b-p <rahulzantoz10@gmail.com>",
-  "yalcSig": "0887a5667bf20d46ffb251200acc4c8c"
+  "yalcSig": "984decf1c3d903f370c623d68b440c2d"
 }

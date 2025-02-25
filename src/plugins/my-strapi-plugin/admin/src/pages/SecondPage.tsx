@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import { Main } from '@strapi/design-system';
-import { Flex, Modal, Button, Field } from '@strapi/design-system';
+import React, { useEffect, useState } from 'react';
 import {
+  Main,
   Table,
   Thead,
   Tbody,
@@ -12,8 +11,13 @@ import {
   Typography,
   Checkbox,
   Divider,
+  Flex,
+  Modal,
+  Button,
+  Field,
 } from '@strapi/design-system';
 import { Database, Pencil, Trash } from '@strapi/icons';
+import todoRequests from '../api/todo';
 
 function SecondPage() {
   const [todo, setTodo] = useState({
@@ -22,11 +26,19 @@ function SecondPage() {
   });
   const [todoData, setTodoData]: [{ id: string; title: string; description: string }[], any] =
     useState([]);
-
+  async function fetchTodoData() {
+    const todo = await todoRequests.getAllTodos();
+    setTodoData(todo);
+  }
   async function addTodo(data: { title: string; description: string }) {
     setTodoData([...todoData, { ...data, id: crypto.randomUUID() }]);
     setTodo({ title: '', description: '' });
   }
+
+  useEffect(() => {
+    fetchTodoData();
+  }, []);
+
   return (
     <Main>
       <Flex

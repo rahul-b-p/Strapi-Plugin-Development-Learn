@@ -2,7 +2,7 @@
   "version": "v1",
   "packages": {
     "my-strapi-plugin": {
-      "signature": "f117271eb9257d725719f0ee4bcfeeaf",
+      "signature": "984decf1c3d903f370c623d68b440c2d",
       "file": true,
       "replaced": "link:.yalc/my-strapi-plugin"
     }
